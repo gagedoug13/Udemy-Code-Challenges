@@ -12,8 +12,8 @@ function anagrams(stringA, stringB) {
     
     let firstString = stringA.replace( /[^\w]/g, "").toLowerCase().split('').sort().join();
     let secondString = stringB.replace( /[^\w]/g, "").toLowerCase().split('').sort().join();
+    
     return firstString === secondString
-   
 }
 
 module.exports = anagrams;
